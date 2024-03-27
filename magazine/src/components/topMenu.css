@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap');
+
+.menuMarkup{
+    background-color: '#7FC7FF';
+    width: 100wh;
+    height: 70px;
+    border: solid;
+    border-color: violet;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menuItem{
+    font-family: "Rubik Scribble", system-ui;
+    font-size: 36px;
+    color: blueviolet;
+    height: 90%;
+    width: 200px;
+    border: solid;
+    border-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

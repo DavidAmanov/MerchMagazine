@@ -1,0 +1,26 @@
+.productMarkup{
+    width: 100wh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card_container{
+    border:solid;
+    border-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 33%;
+    height: 250px;
+    width: 250px;
+}
+
+.product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:solid;
+    border-color: red;
+    height: 250px;
+    width: 250px;
+}
