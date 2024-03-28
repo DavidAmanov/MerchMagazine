@@ -5,7 +5,7 @@ import './topMenu.css'
 
 export default function Menu (){
     const titles = ['Products','About Us','Cart']
-    const links = ['/', 'about', 'cart']
+    const links = ['http://localhost:3000/', 'http://localhost:3000/about', 'http://localhost:3000/cart']
     return(
         <div className='menuMarkup'>
         {titles.map((element, i) => (
