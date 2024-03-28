@@ -12,8 +12,8 @@ export default function MapComp(){
         iconAnchor: [20, 40], 
       });
     return(
-        <div className="mapContainer">
-        <MapContainer center={[51.505, -0.09]} zoom={13} scrollWheelZoom={false} className="map">
+        <div className="mapDiv">
+        <MapContainer center={[51.505, -0.09]} zoom={13} scrollWheelZoom={false} className="mapLeaf">
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

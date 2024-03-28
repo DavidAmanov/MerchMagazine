@@ -1,0 +1,45 @@
+
+.about{
+    overflow: hidden;
+}
+.mapContainer{
+    margin-top: 15px;
+    height: 365px;
+    width: 100%;
+    border: solid;
+    border-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.information{
+    grid-column: 1;
+    margin-left: 45px;
+    font-family: "Rubik Scribble", system-ui;
+    font-size: 36px;
+    color: blueviolet;
+}
+
+.map{
+    grid-column: 2;
+}
+
+.containerSkates{
+    width: 100%;
+
+}
+
+.skate{
+    position: relative;
+    animation: moveRight 7s linear infinite;
+}
+
+@keyframes moveRight {
+    0% {
+      transform: translateX(0); 
+    }
+    100% {
+      transform: translateX(100vw); 
+    }
+  }
