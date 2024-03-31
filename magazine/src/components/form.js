@@ -1,8 +1,10 @@
 import React from "react";
-import { useState } from "react";
+import { useForm, SubmitHandler } from "react-hook-form"; //for comfortable work with form
 import './form.css'
 
 export default function Form(){
+   
+
     return(
         <div className="formBlock">
             <form className="form">
