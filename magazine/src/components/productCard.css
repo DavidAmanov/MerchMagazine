@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+.product{
+    display: grid;
+    grid-column: 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border:solid;
+    border-color: red;
+    height: 250px;
+    width: 250px;
+}
+
+.pokemonImg{
+    height: 150px;
+    width: 150px;
+    position: relative;
+}
+
+.pokemonName{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    color: white;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: blue;
+}
+
+
+img:hover {
+    animation: jump 2s ease infinite;
+  }
+  @keyframes jump {
+    50% { transform: perspective(50px) translateZ(20px); }
+  }
