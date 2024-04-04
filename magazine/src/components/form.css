@@ -26,8 +26,4 @@
 .button{
     margin: 5px;
     width: 100%;
-    border: solid;
-    border-radius: 15%;
-    border-color: blue;
-    background-color: transparent;
 }

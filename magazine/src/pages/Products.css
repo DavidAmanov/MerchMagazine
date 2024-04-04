@@ -2,11 +2,10 @@
     width: 100vw;
     display: flex;
     flex-wrap: wrap;
+
 }
 
 .card_container{
-    border:solid;
-    border-color: aqua;
     display: flex;
     justify-content: center;
     align-items: center;

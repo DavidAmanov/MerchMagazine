@@ -7,10 +7,10 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    border:solid;
-    border-color: red;
     height: 250px;
     width: 250px;
+    border: dashed;
+    border-color: rgb(96, 185, 121);
 }
 
 .pokemonImg{
@@ -28,6 +28,18 @@
     -webkit-text-stroke-color: blue;
 }
 
+.addSection{ 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.counter{
+    border: solid;
+    border-color: aqua;
+    border-radius: 1px;
+    width: 10%;
+}
 
 img:hover {
     animation: jump 2s ease infinite;
