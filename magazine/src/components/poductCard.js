@@ -1,17 +1,19 @@
-import React, {useState} from "react";
-
+import React, {useState, useContext} from "react";
+import {productContext} from './productCartContext';
 import './productCard.css'
-const productList = [];
+
+// const productList = [];
 export default function Product ({srcImg, pokemonName}){
+    const products = useContext(productContext);
     const [countProduct, setCountProduct] = useState(0);
     function handleClick (){
         setCountProduct(countProduct + 1);
-        if(productList.some(pokemon => pokemon.name === pokemonName)){
-            const index = productList.findIndex(pokemon=>pokemon.name === pokemonName);
-            productList[index].value = productList[index].value + 1  
+        if(products.some(pokemon => pokemon.name === pokemonName)){
+            const index = products.findIndex(pokemon=>pokemon.name === pokemonName);
+            products[index].value = products[index].value + 1  
         }else{
-        productList.push({name: pokemonName, value: countProduct+1})}
-        console.log(productList)
+        products.push({name: pokemonName, value: countProduct+1})}
+        console.log(products)
     }
     return(
         <>
@@ -26,4 +28,7 @@ export default function Product ({srcImg, pokemonName}){
         </>
     )
 }
+
+
+
 
