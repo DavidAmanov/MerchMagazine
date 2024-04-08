@@ -2,7 +2,6 @@ import React, {useState, useContext} from "react";
 import {productContext} from './productCartContext';
 import './productCard.css'
 
-// const productList = [];
 export default function Product ({srcImg, pokemonName}){
     const products = useContext(productContext);
     const [countProduct, setCountProduct] = useState(0);
