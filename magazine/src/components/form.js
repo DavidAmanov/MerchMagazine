@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useForm } from "react-hook-form"; //for comfortable work with form
 import './form.css'
+import { productContext } from "./productCartContext";
 
 export default function Form(){
+    const cartData = useContext(productContext); 
    const {
     register, 
     formState:{
@@ -10,8 +12,16 @@ export default function Form(){
     },
     handleSubmit,
    } = useForm();
-
-   const onSubmit = (data) => console.log(data)
+   const url = ``; //use your link
+   const onSubmit = (data) => {console.log(data, cartData);
+    fetch (url, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json; charset=utf-8'
+        },
+        body: JSON.stringify({userData: data, userProducts: cartData})
+    }).then(response=>{console.log(response)}).catch(error=>{console.log(error)})
+   }
 
     return(
         <div className="formBlock">
