@@ -14,6 +14,14 @@ export default function Form(){
    } = useForm();
    const url = ``; //use your link
    const onSubmit = (data) => {console.log(data, cartData);
+    const isCartEmpty = cartData.length === 0;
+    const isFormComplete = Object.values(data).some(value=>!value);
+    if(isCartEmpty || isFormComplete){
+        alert("You can't buy Pokemon until you fill out the form or add them to the cart.");
+        return;
+    } else{
+        alert("Pokemons are on the way to you!")
+    }
     fetch (url, {
         method: 'POST',
         headers: {
